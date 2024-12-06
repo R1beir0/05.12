@@ -8,7 +8,11 @@ function imprimeFrase(){
 }
 
 function TrocaCor(){
-    botao.style.backgroundColor="black"
+    if(botao.style.backgroundColor === "black") {
+        botao.style.backgroundColor = "pink"
+    } else {
+        botao.style.backgroundColor = "black"
+    }
 }
 
 
@@ -18,4 +22,4 @@ botao2.addEventListener("click",TrocaCor);
 
 
 
-/*desafio*/
+
